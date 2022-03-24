@@ -30,7 +30,7 @@ function ListaUsuarios(){
 
     return(
         <div>
-            <h2>Lista de estudiantes</h2>
+            <h2>LISTA DE ESTUDIANTES</h2>
             {listausuarios}
         </div>
     )

@@ -6,7 +6,7 @@ import Swal from 'sweetalert2'
 
 
 function AgregarUsuario(){
-    const navegar = useNavigate()
+const navegar = useNavigate()
 
     //hooks en react
     const[nombre, setNombre] = useState('')
@@ -32,7 +32,7 @@ function AgregarUsuario(){
                 icon: 'success',
                 title: 'Se ha agregado correctamente',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 2000
               })
               navegar(0)
 
@@ -44,7 +44,7 @@ function AgregarUsuario(){
     return(
         <div className='container'>
             <div className='row'>
-               <h2 className='mt-4'>Crear un nuevo estudiante</h2>
+               <h2 className='mt-4'>Datos del nuevo estudiante</h2>
             </div>
 
             <div className='row'>

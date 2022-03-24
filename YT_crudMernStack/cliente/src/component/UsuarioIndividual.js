@@ -5,6 +5,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Swal from 'sweetalert2'
 
+
 function UsuarioIndividual({usuario}){
 
     const navegar = useNavigate()
@@ -15,13 +16,11 @@ function UsuarioIndividual({usuario}){
     })
 
 
-
     //funcion de eliminar un usuaio
     function borrarusuario(idusuario){
         axios.post('/api/usuario/borrarusuario',{idusuario:idusuario}).then(res =>{
             console.log(res.data)
             //alert(res.data)
-            
             Swal.fire({
                 position: 'top-center',
                 icon: 'success',

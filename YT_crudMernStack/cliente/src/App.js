@@ -34,12 +34,9 @@ function App() {
           <Route path = '' element = {<ListaUsuarios/>} exact></Route>
           <Route path = '/agregarusuario' element = {<AgregarUsuario/>} exact></Route>
           <Route path = '/editarusuario/:idusuario' element = {<EditarUsuario/>} exact></Route>
-          
         </Routes>
       </BrowserRouter>
-    </div>
-
-    
+    </div>   
   );
 }
 
